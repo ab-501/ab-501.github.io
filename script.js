@@ -28,7 +28,7 @@ function searchTable() {
     tr = table.getElementsByTagName("tr");
     strictMode = document.getElementById("strictCheckbox").checked;
 
-    document.querySelector("tableizer-firstrow").addEventListener()
+    // document.querySelector("tableizer-firstrow").addEventListener()
 
     for (i = 1; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
