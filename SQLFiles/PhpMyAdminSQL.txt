@@ -1,0 +1,42 @@
+CoinsGeneral
+CREATE TABLE `Coins` (
+  `CoinID` int NOT NULL,
+  `Country` varchar(100) NOT NULL,
+  `Currency` varchar(1) NOT NULL,
+  `Denomination` int NOT NULL,
+  `Year` int NOT NULL,
+  `MintMark` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Material` varchar(20) NOT NULL,
+  `Weight` int NOT NULL,
+  `Diameter` int NOT NULL,
+  `Thickness` int NOT NULL,
+  `EdgeType` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `FrontDesign` varchar(50) NOT NULL,
+  `BackDesign` varchar(50) NOT NULL,
+  `Designer` varchar(50) NOT NULL,
+  `Grade` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Mintage` int DEFAULT NULL,
+  `Rarity` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `History` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Notes` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Image` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `BottleCaps` (
+  `CapID` int NOT NULL,
+  `Brand` varchar(50) NOT NULL,
+  `BeverageType` text NOT NULL,
+  `Country` varchar(50) NOT NULL,
+  `Year` int NOT NULL,
+  `Material` varchar(50) NOT NULL,
+  `Colour` varchar(50) NOT NULL,
+  `Diameter` int NOT NULL,
+  `Design` varchar(100) NOT NULL,
+  `Grade` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Rarity` text,
+  `Set` text,
+  `Manufacturer` varchar(100) NOT NULL,
+  `MarketValue` text,
+  `Notes` text,
+  `Image` longblob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
